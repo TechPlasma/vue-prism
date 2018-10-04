@@ -5,7 +5,7 @@ const VuePrism = {
     install (Vue, options) {
 
         Vue.mixin({
-            mounted () {
+            updated () {
                 Prism.highlightAll();
             }
         })
